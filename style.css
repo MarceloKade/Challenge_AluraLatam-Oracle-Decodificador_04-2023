@@ -136,3 +136,15 @@ figcaption {
     background: #FFFFFF;
     cursor: pointer;
 }
+
+.mensagem-criptografada {
+    
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
