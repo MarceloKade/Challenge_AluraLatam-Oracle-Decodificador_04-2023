@@ -1,3 +1,8 @@
+figcaption {
+    position: absolute;
+    left: -9999px;
+  }
+
 .container {
     position: relative;
     background: #F3F5FC;
