@@ -189,3 +189,22 @@ figcaption {
     flex-grow: 0;
     margin-left: 10px;   
 }
+
+#texto-criptografado {
+    width: 336px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    justify-content:center;
+    text-align: center;
+    margin-left: 10px;
+
+    color: #495057;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
