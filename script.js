@@ -57,6 +57,6 @@ criptografiaButton.addEventListener('click', function (event) {
     mensagemAside.appendChild(textoCriptografado);
 });
 
-descriptografiaButton.addEventListener('click', function () {
-
+descriptografiaButton.addEventListener('click', function (event) {
+    event.preventDefault();
 });
