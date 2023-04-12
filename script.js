@@ -23,6 +23,7 @@ function criarTextoarea() {
 function copy() {
 
     const copyButton = document.createElement('button');
+    copyButton.textContent = 'Copiar';
 
 }
 
