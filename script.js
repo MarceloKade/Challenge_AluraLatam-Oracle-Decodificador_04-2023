@@ -20,4 +20,28 @@ criptografiaButton.addEventListener('click', function (event) {
     mensagemAside.innerHTML = '';
     textoGlobal = '';
 
+    for (let i = 0; i < textoDigitado.length; i++) {
+        const letra = textoDigitado.charAt(i);
+        switch (letra) {
+            case 'e':
+                textoGlobal += 'enter';
+                break;
+            case 'i':
+                textoGlobal += 'imes';
+                break;
+            case 'a':
+                textoGlobal += 'ai';
+                break;
+            case 'o':
+                textoGlobal += 'ober';
+                break;
+            case 'u':
+                textoGlobal += 'ufat';
+                break;
+            default:
+                textoGlobal += letra;
+                break;
+        }
+    }
+
 });
