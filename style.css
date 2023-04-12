@@ -77,6 +77,11 @@ figcaption {
 
 }
 
+#criptografar:hover{
+    background: #072B61;
+    cursor: pointer;
+}
+
 #descriptografar {
     display: flex;
     flex-direction: row;
@@ -99,4 +104,9 @@ figcaption {
     line-height: 19px;
     text-align: center;
     
+}
+
+#descriptografar:hover{
+    background: #FFFFFF;
+    cursor: pointer;
 }
