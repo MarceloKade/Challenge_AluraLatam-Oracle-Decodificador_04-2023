@@ -20,6 +20,10 @@ function criarTextoarea() {
     return textoCriptografado;
 }
 
+function copy() {
+
+}
+
 criptografiaButton.addEventListener('click', function (event) {
 
     event.preventDefault();
