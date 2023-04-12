@@ -64,4 +64,20 @@ descriptografiaButton.addEventListener('click', function (event) {
     textoGlobal = '';
 
     let i = 0;
+
+    while (i < textoDigitado.length) {
+        let palavraEncontrada = false;
+        for (let palavra in palavraParaLetra) {
+            if (textoDigitado.slice(i, i + palavra.length) === palavra) {
+                textoGlobal += palavraParaLetra[palavra];
+                i += palavra.length;
+                palavraEncontrada = true;
+                break;
+            }
+        }
+        if (!palavraEncontrada) {
+            textoGlobal += textoDigitado[i];
+            i++;
+        }
+    }
 });
