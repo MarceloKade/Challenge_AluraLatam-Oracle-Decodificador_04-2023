@@ -22,6 +22,8 @@ function criarTextoarea() {
 
 function copy() {
 
+    const copyButton = document.createElement('button');
+
 }
 
 criptografiaButton.addEventListener('click', function (event) {
