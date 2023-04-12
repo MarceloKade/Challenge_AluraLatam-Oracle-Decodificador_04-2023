@@ -156,3 +156,19 @@ figcaption {
     left: 32px;
     top: 243px;
 }
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 32px;
+    top: 619px;
+    font-family: 'Inter', sans-serif;
+
+}
