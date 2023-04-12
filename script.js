@@ -84,5 +84,6 @@ descriptografiaButton.addEventListener('click', function (event) {
     mensagemAside.innerHTML = '';
     const textoDescriptografado = criarTextoarea();
     textoDescriptografado.textContent = textoGlobal;
+    mensagemAside.appendChild(textoDescriptografado);
 
 });
