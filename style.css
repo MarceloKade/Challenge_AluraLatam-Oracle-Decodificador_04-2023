@@ -172,3 +172,20 @@ figcaption {
     font-family: 'Inter', sans-serif;
 
 }
+
+#sem-mensagem{
+    width: 336px;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    justify-content:center;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-left: 10px;   
+}
