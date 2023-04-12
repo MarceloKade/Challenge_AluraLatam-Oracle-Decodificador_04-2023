@@ -16,5 +16,6 @@ criptografiaButton.addEventListener('click', function (event) {
     event.preventDefault();
     const textoDigitado = textArea.value;
     textArea.value = '';
+    mensagemAside.innerHTML = '';
 
 });
