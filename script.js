@@ -56,3 +56,7 @@ criptografiaButton.addEventListener('click', function (event) {
     textoCriptografado.textContent = textoGlobal;
     mensagemAside.appendChild(textoCriptografado);
 });
+
+descriptografiaButton.addEventListener('click', function () {
+
+});
