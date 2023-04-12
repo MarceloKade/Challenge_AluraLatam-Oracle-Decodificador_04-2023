@@ -80,4 +80,7 @@ descriptografiaButton.addEventListener('click', function (event) {
             i++;
         }
     }
+
+    mensagemAside.innerHTML = '';
+
 });
