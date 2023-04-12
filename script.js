@@ -44,4 +44,6 @@ criptografiaButton.addEventListener('click', function (event) {
         }
     }
 
+    const textoCriptografado = criarTextoarea();
+
 });
