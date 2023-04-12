@@ -62,4 +62,6 @@ descriptografiaButton.addEventListener('click', function (event) {
     const textoDigitado = textArea.value;
     textArea.value = '';
     textoGlobal = '';
+
+    let i = 0;
 });
