@@ -59,4 +59,5 @@ criptografiaButton.addEventListener('click', function (event) {
 
 descriptografiaButton.addEventListener('click', function (event) {
     event.preventDefault();
+    const textoDigitado = textArea.value;
 });
