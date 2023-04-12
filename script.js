@@ -4,6 +4,14 @@ const descriptografiaButton = document.getElementById('descriptografar');
 const mensagemAside = document.querySelector('.mensagem-criptografada');
 let textoGlobal;
 
+const palavraParaLetra = {
+    'enter': 'e',
+    'imes': 'i',
+    'ai': 'a',
+    'ober': 'o',
+    'ufat': 'u'
+};
+
 function criarTextoarea() {
     const textoCriptografado = document.createElement('textarea');
     textoCriptografado.classList.add('mensagem-textarea');
