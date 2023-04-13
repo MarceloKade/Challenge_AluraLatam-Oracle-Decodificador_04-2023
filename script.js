@@ -49,6 +49,7 @@ function copy() {
             console.error('Não foi possível copiar o texto.');
         }
 
+        window.getSelection().removeAllRanges();
     });
 
 }
