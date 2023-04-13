@@ -39,6 +39,7 @@ function copy() {
         }
 
         textarea.value = textoCopiado;
+        textarea.setAttribute('wrap', 'off');
 
     });
 
