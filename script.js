@@ -32,6 +32,8 @@ function copy() {
         event.preventDefault();
         const textarea = document.querySelector('.mensagem-textarea');
 
+        let textoCopiado = '';
+
     });
 
 }
