@@ -1,4 +1,6 @@
 const textArea = document.getElementById('text-area');
+document.getElementById('text-area').focus();
+
 const criptografiaButton = document.getElementById('criptografar');
 const descriptografiaButton = document.getElementById('descriptografar');
 const mensagemAside = document.querySelector('.mensagem-criptografada');
@@ -50,6 +52,8 @@ function copy() {
         }
 
         window.getSelection().removeAllRanges();
+
+        document.getElementById('text-area').focus();
     });
 
 }
@@ -91,6 +95,8 @@ criptografiaButton.addEventListener('click', function (event) {
     mensagemAside.appendChild(textoCriptografado);
 
     copy()
+
+    document.getElementById('text-area').focus();
 });
 
 descriptografiaButton.addEventListener('click', function (event) {
@@ -123,4 +129,6 @@ descriptografiaButton.addEventListener('click', function (event) {
     mensagemAside.appendChild(textoDescriptografado);
 
     copy()
+
+    document.getElementById('text-area').focus();
 });
