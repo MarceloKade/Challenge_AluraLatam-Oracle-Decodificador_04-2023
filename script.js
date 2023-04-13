@@ -29,6 +29,8 @@ function copy() {
 
     copyButton.addEventListener('click', function (event) {
 
+        event.preventDefault();
+
     });
 
 }
