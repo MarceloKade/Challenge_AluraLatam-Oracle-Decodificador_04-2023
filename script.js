@@ -43,6 +43,12 @@ function copy() {
         textarea.select();
         const success = document.execCommand('copy');
 
+        if (success) {
+            console.log('Texto copiado com sucesso!');
+        } else {
+            console.error('Não foi possível copiar o texto.');
+        }
+
     });
 
 }
