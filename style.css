@@ -253,3 +253,8 @@ figcaption {
     line-height: 19px;
     color: #0A3871;
   }
+
+  #copy-button:hover {
+    background: #EFF1FA;
+    cursor: pointer;
+  }
