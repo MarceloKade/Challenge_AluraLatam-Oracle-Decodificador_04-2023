@@ -40,6 +40,8 @@ function copy() {
 
         textarea.value = textoCopiado;
         textarea.setAttribute('wrap', 'off');
+        textarea.select();
+        const success = document.execCommand('copy');
 
     });
 
