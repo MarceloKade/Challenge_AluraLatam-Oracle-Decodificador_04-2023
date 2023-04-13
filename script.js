@@ -30,6 +30,7 @@ function copy() {
     copyButton.addEventListener('click', function (event) {
 
         event.preventDefault();
+        const textarea = document.querySelector('.mensagem-textarea');
 
     });
 
