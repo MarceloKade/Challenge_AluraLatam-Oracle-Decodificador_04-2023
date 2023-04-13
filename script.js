@@ -33,6 +33,10 @@ function copy() {
         const textarea = document.querySelector('.mensagem-textarea');
 
         let textoCopiado = '';
+        for (let i = 0; i < textoGlobal.length; i++) {
+            const letra = textoGlobal.charAt(i);
+            textoCopiado += letra;
+        }
 
     });
 
