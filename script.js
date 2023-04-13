@@ -27,6 +27,10 @@ function copy() {
     copyButton.setAttribute('id', 'copy-button');
     mensagemAside.appendChild(copyButton);
 
+    copyButton.addEventListener('click', function (event) {
+
+    });
+
 }
 
 criptografiaButton.addEventListener('click', function (event) {
