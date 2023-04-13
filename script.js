@@ -88,6 +88,8 @@ criptografiaButton.addEventListener('click', function (event) {
     const textoCriptografado = criarTextoarea();
     textoCriptografado.textContent = textoGlobal;
     mensagemAside.appendChild(textoCriptografado);
+
+    copy()
 });
 
 descriptografiaButton.addEventListener('click', function (event) {
@@ -119,4 +121,5 @@ descriptografiaButton.addEventListener('click', function (event) {
     textoDescriptografado.textContent = textoGlobal;
     mensagemAside.appendChild(textoDescriptografado);
 
+    copy()
 });
