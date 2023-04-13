@@ -25,6 +25,7 @@ function copy() {
     const copyButton = document.createElement('button');
     copyButton.textContent = 'Copiar';
     copyButton.setAttribute('id', 'copy-button');
+    mensagemAside.appendChild(copyButton);
 
 }
 
