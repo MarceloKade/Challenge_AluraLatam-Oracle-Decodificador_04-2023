@@ -38,6 +38,8 @@ function copy() {
             textoCopiado += letra;
         }
 
+        textarea.value = textoCopiado;
+
     });
 
 }
