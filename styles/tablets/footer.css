@@ -1,9 +1,12 @@
 @media (max-width: 768px) {
-    #social-media{
-        margin-bottom: 170px;
-
-    }
-    footer img {
-        margin: 0 22px;
+    #social-media {
+        top: 1008px;
+        right: 0;
+        left: 0;
+      }
+      footer img {
+        margin: 0 19px;
+        width: 90px;
+        height: 90px;
     }
 }
