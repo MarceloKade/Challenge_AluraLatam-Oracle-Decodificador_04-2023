@@ -1,0 +1,38 @@
+@import url("criptografado");
+
+@media (max-width: 768px) {
+    .mensagem-criptografada {
+        position: relative;
+        width: 688px;
+        height: 133px;
+        left: 40px;
+        top: 1001px;
+    }
+    #procurando{
+        display: none;
+
+    }
+    .mensagem {
+        position: absolute;
+        width: 624px;
+        height: 69px;
+        left: 32px;
+        top: 32px;
+        font-family: 'Inter', sans-serif;
+        align-self: stretch;
+        justify-content: center;
+    }
+    #sem-mensagem{
+        width: 624px;
+        height: 29px;
+    }
+    #texto-criptografado {
+        width: 624px;
+        height: 24px;
+    
+    }
+}
+
+
+
+

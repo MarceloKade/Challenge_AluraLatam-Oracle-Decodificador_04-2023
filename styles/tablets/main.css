@@ -1,0 +1,20 @@
+@import url("buttons.css");
+
+@media (max-width: 768px) {
+    #text-area {
+        left: 40px;
+        top: 240px;
+    }
+
+    .alerta {
+        left: 40px;
+        top: 836px;
+        
+    }
+    
+    .buttons {
+        width: 688px;
+        left: 40px;
+        top: 870px;
+    }
+}

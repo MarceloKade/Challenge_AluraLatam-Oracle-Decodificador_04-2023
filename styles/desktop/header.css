@@ -1,0 +1,17 @@
+figcaption {
+    position: absolute;
+    left: -9999px;
+  }
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}

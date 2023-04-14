@@ -22,11 +22,26 @@ function criarTextoarea() {
     return textoCriptografado;
 }
 
+function definirAltura() {
+    const width = window.innerWidth;
+
+    if (width >= 376 && width < 768) {
+        mensagemAside.style.height = '595px';
+    } else if (width >= 768 && width < 1440) {
+        mensagemAside.style.height = '343px';
+    } else {
+        mensagemAside.style.height = '944px';
+    }
+}
+
 function copy() {
 
     const copyButton = document.createElement('button');
     copyButton.textContent = 'Copiar';
     copyButton.setAttribute('id', 'copy-button');
+
+    definirAltura();
+
     mensagemAside.appendChild(copyButton);
 
     copyButton.addEventListener('click', function (event) {
@@ -54,6 +69,8 @@ function copy() {
         window.getSelection().removeAllRanges();
 
         document.getElementById('text-area').focus();
+
+
     });
 
 }
@@ -132,3 +149,4 @@ descriptografiaButton.addEventListener('click', function (event) {
 
     document.getElementById('text-area').focus();
 });
+window.addEventListener('resize', definirAltura);

@@ -1,0 +1,12 @@
+@import url("header.css");
+@import url("main.css");
+@import url("buttons.css");
+@import url("aside.css");
+@import url("dinamico/criptografado.css");
+@import url("dinamico/copy.css");
+
+@media (max-width: 768px) {
+    .container{
+        width: 768px;
+    }
+}

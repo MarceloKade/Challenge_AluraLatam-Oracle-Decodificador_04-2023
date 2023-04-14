@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  #copy-button {
+      width: 624px;
+      height: 67px;
+      left: 32px;
+      top: 244px;
+    }
+}

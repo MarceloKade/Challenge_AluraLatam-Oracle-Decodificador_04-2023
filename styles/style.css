@@ -1,0 +1,13 @@
+@import url("desktop/desktop.css");
+@import url("tablets/tablets.css");
+@import url("celulares/celulares.css");
+
+html{
+  background: #F3F5FC;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}

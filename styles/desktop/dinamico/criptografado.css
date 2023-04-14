@@ -1,0 +1,18 @@
+@import url("copy.css");
+
+.mensagem-textarea {
+    position: absolute;
+    pointer-events: none;
+    color: #495057;
+    border: none;
+    resize: none;
+    outline: none;
+    height: 781px;
+    width: 336px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 32px;
+    margin-top: 32px;
+    margin-right: 32px;
+  }

@@ -1,0 +1,11 @@
+@media (max-width: 375px) {
+  #copy-button {
+      width: 279px;
+      height: 67px;
+      top: 496px;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+      left: calc(50% - 139.5px);
+    }
+}

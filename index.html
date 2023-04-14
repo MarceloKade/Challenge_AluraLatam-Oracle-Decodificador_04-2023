@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
-    <link rel='stylesheet' href='reset.css'>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='styles/reset.css'>
+    <link rel='stylesheet' href='styles/style.css'>
 </head>
 
 <body>
@@ -14,16 +14,16 @@
         <header>
             <h1>
                 <figure>
-                    <img id="logo" src="logo.svg" alt="logo">
+                    <img id="logo" src="assets/img/logo.svg" alt="logo">
                     <figcaption>Decodificador de textos</figcaption>
                 </figure>
             </h1>
         </header>
         <main>
-            <textarea name="textoEntrada" id="text-area" cols="30" rows="10"
+            <textarea id="text-area" name="textoEntrada" cols="30" rows="10"
                 placeholder="Digite seu texto aqui"></textarea>
             <div class="alerta">
-                <img src="icon-exclamation.svg" alt="Alerta">
+                <img src="assets/icons/icon-exclamation.svg" alt="Alerta">
                 <p>Apenas letras minúsculas e sem acento.</p>
             </div>
             <div class="buttons">
@@ -35,17 +35,20 @@
                 </button>
             </div>
         </main>
-        <aside class="mensagem-criptografada">
-            <img id="procurando" src="procurando.svg" alt="imagem de busca">
-            <div class="mensagem">
-                <h2 id="sem-mensagem">Nenhuma mensagem <br> encontrada</h2>
-                <p id="texto-criptografado"> Digite um texto que você deseja <br> criptografar ou descriptografar</p>
+        <aside>
+            <div class="mensagem-criptografada">
+                <img id="procurando" src="assets/img/procurando.svg" alt="imagem de busca">
+                <div class="mensagem">
+                    <h2 id="sem-mensagem">Nenhuma mensagem encontrada</h2>
+                    <p id="texto-criptografado"> Digite um texto que você deseja criptografar ou descriptografar
+                    </p>
+                </div>
             </div>
         </aside>
         <footer>
         </footer>
-        <script src="script.js"></script>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,80 @@
+@import url("criptografado");
+
+.mensagem-criptografada {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    right: 40px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+@media (max-width: 1440px) {
+    .mensagem-criptografada {
+        left: 1000px;
+    }
+
+  }
+
+#procurando {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 32px;
+    top: 243px;
+}
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 32px;
+    top: 619px;
+    font-family: 'Inter', sans-serif;
+}
+
+#sem-mensagem{
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    width: 336px;
+    height: 58px;
+    color: #343A40;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+
+}
+
+#texto-criptografado {
+    flex: none;
+    order: 1;
+    align-self: center;
+    justify-content: center;
+    flex-grow: 0;
+    width: 336px;
+    height: 48px;
+    color: #495057;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 28ch;
+}
