@@ -25,7 +25,7 @@ function criarTextoarea() {
 function definirAltura() {
     const width = window.innerWidth;
 
-    if (width >= 376 && width < 768) {
+    if (width >= 375 && width < 768) {
         mensagemAside.style.height = '595px';
     } else if (width >= 768 && width < 1440) {
         mensagemAside.style.height = '343px';

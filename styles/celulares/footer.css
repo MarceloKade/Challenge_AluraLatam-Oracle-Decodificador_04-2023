@@ -1,0 +1,8 @@
+@media (max-width: 375px) {
+    #social-media{
+        margin-bottom: 220px;
+    }
+    footer img {
+        margin: 0 7px;
+      }
+}

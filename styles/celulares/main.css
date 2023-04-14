@@ -2,8 +2,10 @@
 
 @media (max-width: 375px) {
     #text-area {
-        left: 40px;
-        top: 240px;
+        width: 343px;
+        height: 320px;
+        left: 16px;
+        top: 152px;
     }
 
     .alerta {
