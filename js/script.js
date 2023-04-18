@@ -3,7 +3,7 @@ document.getElementById('text-area').focus();
 
 const criptografiaButton = document.getElementById('criptografar');
 const descriptografiaButton = document.getElementById('descriptografar');
-const mensagemAside = document.querySelector('.mensagem-criptografada');
+const mensagemLateral = document.querySelector('.mensagem-criptografada');
 let textoGlobal;
 
 const palavraParaLetra = {
@@ -26,11 +26,11 @@ function definirAltura() {
     const width = window.innerWidth;
 
     if (width >= 375 && width < 768) {
-        mensagemAside.style.height = '595px';
+        mensagemLateral.style.height = '595px';
     } else if (width >= 768 && width < 1440) {
-        mensagemAside.style.height = '343px';
+        mensagemLateral.style.height = '343px';
     } else {
-        mensagemAside.style.height = '944px';
+        mensagemLateral.style.height = '944px';
     }
 }
 
@@ -42,7 +42,7 @@ function copy() {
 
     definirAltura();
 
-    mensagemAside.appendChild(copyButton);
+    mensagemLateral.appendChild(copyButton);
 
     copyButton.addEventListener('click', function (event) {
 
@@ -80,7 +80,7 @@ criptografiaButton.addEventListener('click', function (event) {
     event.preventDefault();
     const textoDigitado = textArea.value;
     textArea.value = '';
-    mensagemAside.innerHTML = '';
+    mensagemLateral.innerHTML = '';
     textoGlobal = '';
 
     for (let i = 0; i < textoDigitado.length; i++) {
@@ -109,7 +109,7 @@ criptografiaButton.addEventListener('click', function (event) {
 
     const textoCriptografado = criarTextoarea();
     textoCriptografado.textContent = textoGlobal;
-    mensagemAside.appendChild(textoCriptografado);
+    mensagemLateral.appendChild(textoCriptografado);
 
     copy()
 
@@ -140,10 +140,10 @@ descriptografiaButton.addEventListener('click', function (event) {
         }
     }
 
-    mensagemAside.innerHTML = '';
+    mensagemLateral.innerHTML = '';
     const textoDescriptografado = criarTextoarea();
     textoDescriptografado.textContent = textoGlobal;
-    mensagemAside.appendChild(textoDescriptografado);
+    mensagemLateral.appendChild(textoDescriptografado);
 
     copy()
 
