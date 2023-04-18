@@ -20,31 +20,34 @@
             </h1>
         </header>
         <main>
-            <textarea id="text-area" name="textoEntrada" cols="30" rows="10"
-                placeholder="Digite seu texto aqui"></textarea>
-            <div class="alerta">
-                <img src="assets/icons/icon-exclamation.svg" alt="Alerta">
-                <p>Apenas letras minúsculas e sem acento.</p>
-            </div>
-            <div class="buttons">
-                <button type="button" id="criptografar">
-                    <p>Criptografar</p>
-                </button>
-                <button type="button" id="descriptografar">
-                    <p>Descriptografar</p>
-                </button>
-            </div>
-        </main>
-        <aside>
-            <div class="mensagem-criptografada">
-                <img id="procurando" src="assets/img/procurando.svg" alt="imagem de busca">
-                <div class="mensagem">
-                    <h2 id="sem-mensagem">Nenhuma mensagem encontrada</h2>
-                    <p id="texto-criptografado"> Digite um texto que você deseja criptografar ou descriptografar
-                    </p>
+            <section class="principal">
+                <textarea id="text-area" name="textoEntrada" cols="30" rows="10"
+                    placeholder="Digite seu texto aqui"></textarea>
+                <div class="alerta">
+                    <img src="assets/icons/icon-exclamation.svg" alt="Alerta">
+                    <p>Apenas letras minúsculas e sem acento.</p>
                 </div>
-            </div>
-        </aside>
+                <div class="buttons">
+                    <button type="button" id="criptografar">
+                        <p>Criptografar</p>
+                    </button>
+                    <button type="button" id="descriptografar">
+                        <p>Descriptografar</p>
+                    </button>
+                </div>
+            </section>
+            <section class="lateral">
+                <div class="mensagem-criptografada">
+                    <img id="procurando" src="assets/img/procurando.svg" alt="imagem de busca">
+                    <div class="mensagem">
+                        <h2 id="sem-mensagem">Nenhuma mensagem encontrada</h2>
+                        <p id="texto-criptografado"> Digite um texto que você deseja criptografar ou descriptografar
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
         <div id="social-media">
 
             <footer>
