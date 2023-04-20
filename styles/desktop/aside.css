@@ -11,13 +11,6 @@
     border-radius: 32px;
 }
 
-@media (max-width: 1440px) {
-    .mensagem-criptografada {
-        left: 1000px;
-    }
-
-  }
-
 #procurando {
     position: absolute;
     width: 336px;

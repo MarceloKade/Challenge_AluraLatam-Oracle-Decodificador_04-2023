@@ -2,6 +2,7 @@
 
 #text-area {
     position: absolute;
+    flex-basis: auto;
     width: 680px;
     height: 500px;
     left: 240px;
@@ -48,9 +49,7 @@
 .buttons {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
+    justify-content: space-between;
     position: absolute;
     width: 680px;
     height: 67px;

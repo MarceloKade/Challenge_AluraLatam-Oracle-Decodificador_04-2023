@@ -1,8 +1,0 @@
-@import url("copy.css");
-
-@media (max-width: 768px) {
-  .mensagem-textarea {
-    width: 624px;
-    height: 180px;
-  }
-}

@@ -1,13 +1,116 @@
-@import url("header.css");
-@import url("main.css");
-@import url("buttons.css");
-@import url("aside.css");
-@import url("footer.css");
-@import url("dinamico/criptografado.css");
-@import url("dinamico/copy.css");
-
-@media (max-width: 375px) {
+@media (max-width: 420px) {
     .container{
         width: 375px;
+        margin: 0 auto;
     }
+    /*header*/
+    #logo {
+        left: 24px;
+        top: 16px;
+    }
+    /*section 1*/
+    #text-area {
+        width: 343px;
+        height: 320px;
+        left: 16px;
+        top: 152px;
+    }
+
+    .alerta {
+        left: 40px;
+        top: 447px;
+        
+    }
+
+    .alerta p {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    /*section 2*/
+    .buttons {
+        flex-direction: column;
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 485px;
+    }
+    #criptografar {
+        width: 332px;
+
+    }
+
+    #descriptografar {
+        width: 332px;
+
+    }
+    /*section 3*/
+    .mensagem-criptografada {
+        width: 327px;
+        height: 186px;
+        top: 707px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        
+    }
+    .mensagem {
+        width: 263px;
+        height: 122px;
+        left: 32px;
+        top: 32px;
+        align-self: stretch;
+        justify-content: center;
+    }
+    #sem-mensagem{
+        width: 263px;
+        height: 58px;
+    }
+    #texto-criptografado {
+        width: 263px;
+        height: 48px;
+    
+    }
+    /*footer*/
+    .social-media {
+        width:375px;
+        height: 46.88px;
+        top: 654px;
+        justify-content: flex-end;
+
+    }
+
+    .social-media footer ul{
+        width: 100%;
+        flex-direction: row;
+        gap:2px;
+      }
+    footer img {
+        margin: 0 5px;
+        width: 80%;
+        height: 80%;
+    }
+
+    /*dinamica*/
+    .mensagem-textarea {
+        width: 279px;
+        height: 432px;
+    }
+    #copy-button {
+        width: 279px;
+        height: 67px;
+        top: 496px;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        left: calc(50% - 139.5px);
+    }
+
 }
