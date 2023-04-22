@@ -11,3 +11,14 @@
         width: 1440px;
     }
 }
+
+.mensagem-temporaria {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    color: rgba(135,206,250,0.3);
+  }
