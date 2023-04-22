@@ -1,4 +1,11 @@
 @media (max-width: 768px) {
+    /*body*/
+    .mensagem-temporaria{
+        bottom: 33%;
+        font-size: 3.2vh;
+        left: 50%;
+
+    }
     .container{
         width: 768px;
     }
@@ -38,7 +45,8 @@
     /*section 3*/
     .mensagem-criptografada {
         width: 688px;
-        height: 133px;
+        height:auto;
+        min-height: 133px;
         top: 1001px;
     }
     #procurando{
@@ -82,14 +90,14 @@
         width: 60px;
         height: 60px;
     }
-      /*dinamico*/
-      .mensagem-textarea {
-        flex-basis:0;
+    .mensagem-p {
+        width: 690px;
+        margin-bottom: 118px;
+
     }
     #copy-button {
         width: 624px;
         height: 67px;
         left: 32px;
-        top: 244px;
     }
 }
