@@ -1,10 +1,10 @@
 # Projeto Decodificador
 
-[Decodificador Mobile](/assets/img/decodificador-mobile.svg)
+[Decodificador Mobile](/assets/img/decodificador-mobile.png)
 
-[Decodificador Tablet](/assets/img/decodificador-tablet.svg)
+[Decodificador Tablet](/assets/img/decodificador-tablet.png)
 
-[Decodificador Desktop](/assets/img/decodificador-desktop.svg)
+[Decodificador Desktop](/assets/img/decodificador-desktop.png)
 
 ## Menu
 
