@@ -1,10 +1,11 @@
 # Projeto Decodificador
 
-[Decodificador Mobile](/assets/img/decodificador-mobile.png)
+[Decodificador Desktop](https://drive.google.com/file/d/1YrIDxefQwODTgiwhCf61j__1ef3aXYyy)
 
-[Decodificador Tablet](/assets/img/decodificador-tablet.png)
+[Decodificador Tablet](https://drive.google.com/file/d/1zfmgscUMPP1rxlYRX_FKVW_OfoNwa3Y-)
 
-[Decodificador Desktop](/assets/img/decodificador-desktop.png)
+[Decodificador Mobile](https://drive.google.com/file/d/1yMuvh1gOnc_CkXsZLt75KlrSL9L5wfEb)
+
 
 ## Menu
 
