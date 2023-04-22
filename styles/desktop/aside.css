@@ -1,7 +1,7 @@
-@import url("criptografado");
-
 .mensagem-criptografada {
     position: absolute;
+    display: flex; /* adicionado */
+    flex-direction: column; /* adicionado */
     width: 400px;
     height: 944px;
     right: 40px;
