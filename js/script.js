@@ -22,6 +22,49 @@ function criarParagrafo() {
     return textoCriptografado;
 }
 
+function mensagemTemporaria(textoTemporario) {
+    const mensagemTemporariaExistente = document.querySelector('.mensagem-temporaria');
+    if (mensagemTemporariaExistente) {
+        document.body.removeChild(mensagemTemporariaExistente);
+    }
+
+    const mensagemTemporaria = document.createElement('p');
+    mensagemTemporaria.classList.add('mensagem-temporaria');
+    mensagemTemporaria.textContent = textoTemporario;
+
+    document.body.appendChild(mensagemTemporaria);
+
+    setTimeout(() => {
+        if (mensagemTemporaria.parentNode) {
+            mensagemTemporaria.parentNode.removeChild(mensagemTemporaria);
+        }
+    }, 2000);
+    return mensagemTemporaria;
+}
+
+function imagemVoltando() {
+    const img = document.createElement('img');
+    img.id = 'procurando';
+    img.src = 'assets/img/procurando.svg';
+    img.alt = 'Imagem de busca';
+    mensagemLateral.appendChild(img);
+
+    const div = document.createElement('div');
+    div.classList.add('mensagem');
+    mensagemLateral.appendChild(div);
+
+    const h2 = document.createElement('h2');
+    h2.id = 'sem-mensagem';
+    div.appendChild(h2);
+    h2.textContent = "Nenhuma mensagem encontrada";
+
+    const p = document.createElement('p');
+    p.id = 'texto-criptografado';
+    div.appendChild(p);
+    p.textContent = "Digite um texto que você deseja criptografar ou descriptografar";
+
+}
+
 function copy() {
 
     const copyButton = document.createElement('button');
@@ -45,10 +88,12 @@ function copy() {
         const success = document.execCommand('copy');
 
         if (success) {
-            console.log('Texto copiado com sucesso!');
+            mensagemTemporaria("Texto copiado com sucesso")
         } else {
-            console.error('Não foi possível copiar o texto.');
+            mensagemTemporaria("Não conseguiu copiar o texto")
         }
+        mensagemLateral.innerHTML = '';
+        imagemVoltando()
 
         // remove a seleção de texto
         selection.removeAllRanges();
@@ -60,6 +105,14 @@ function copy() {
 criptografiaButton.addEventListener('click', function (event) {
 
     event.preventDefault();
+    // Verifica se o campo de texto está vazio
+    if (!textArea.value.trim()) {
+        mensagemTemporaria('Campo de texto vazio');
+        document.getElementById('text-area').focus();
+
+        return;
+    }
+
     const textoDigitado = textArea.value;
     textArea.value = '';
     mensagemLateral.innerHTML = '';
@@ -99,12 +152,20 @@ criptografiaButton.addEventListener('click', function (event) {
     });
 
     copy()
-
+    mensagemTemporaria("Texto criptografado")
     document.getElementById('text-area').focus();
+
 });
 
 descriptografiaButton.addEventListener('click', function (event) {
     event.preventDefault();
+    if (!textArea.value.trim()) {
+        mensagemTemporaria('Campo de texto vazio');
+        document.getElementById('text-area').focus();
+
+        return;
+    }
+
     const textoDigitado = textArea.value;
     textArea.value = '';
     textoGlobal = '';
@@ -138,6 +199,8 @@ descriptografiaButton.addEventListener('click', function (event) {
     });
 
     copy()
+    mensagemTemporaria("Texto descriptografado")
+
 
     document.getElementById('text-area').focus();
 });
