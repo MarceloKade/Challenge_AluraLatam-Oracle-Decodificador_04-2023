@@ -14,24 +14,12 @@ const palavraParaLetra = {
     'ufat': 'u'
 };
 
-function criarTextoarea() {
-    const textoCriptografado = document.createElement('textarea');
-    textoCriptografado.classList.add('mensagem-textarea');
+function criarParagrafo() {
+    const textoCriptografado = document.createElement('p');
+    textoCriptografado.classList.add('mensagem-p');
     document.body.appendChild(textoCriptografado);
 
     return textoCriptografado;
-}
-
-function definirAltura() {
-    const width = window.innerWidth;
-
-    if (width >= 375 && width < 768) {
-        mensagemLateral.style.height = '595px';
-    } else if (width >= 768 && width < 1440) {
-        mensagemLateral.style.height = '343px';
-    } else {
-        mensagemLateral.style.height = '944px';
-    }
 }
 
 function copy() {
@@ -40,24 +28,20 @@ function copy() {
     copyButton.textContent = 'Copiar';
     copyButton.setAttribute('id', 'copy-button');
 
-    definirAltura();
-
     mensagemLateral.appendChild(copyButton);
 
     copyButton.addEventListener('click', function (event) {
-
         event.preventDefault();
-        const textarea = document.querySelector('.mensagem-textarea');
+        const p = document.querySelector('.mensagem-p');
 
-        let textoCopiado = '';
-        for (let i = 0; i < textoGlobal.length; i++) {
-            const letra = textoGlobal.charAt(i);
-            textoCopiado += letra;
-        }
+        // cria uma seleção de texto a partir do elemento <p>
+        const range = document.createRange();
+        range.selectNodeContents(p);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
 
-        textarea.value = textoCopiado;
-        textarea.setAttribute('wrap', 'off');
-        textarea.select();
+        // copia o conteúdo selecionado para a área de transferência
         const success = document.execCommand('copy');
 
         if (success) {
@@ -66,11 +50,9 @@ function copy() {
             console.error('Não foi possível copiar o texto.');
         }
 
-        window.getSelection().removeAllRanges();
-
+        // remove a seleção de texto
+        selection.removeAllRanges();
         document.getElementById('text-area').focus();
-
-
     });
 
 }
@@ -107,9 +89,14 @@ criptografiaButton.addEventListener('click', function (event) {
         }
     }
 
-    const textoCriptografado = criarTextoarea();
+    const textoCriptografado = criarParagrafo();
     textoCriptografado.textContent = textoGlobal;
     mensagemLateral.appendChild(textoCriptografado);
+    textoCriptografado.addEventListener('input', () => {
+        if (textoCriptografado.scrollHeight > textoCriptografado.offsetHeight) {
+            textoCriptografado.style.height = `${textoCriptografado.scrollHeight}px`;
+        }
+    });
 
     copy()
 
@@ -141,12 +128,16 @@ descriptografiaButton.addEventListener('click', function (event) {
     }
 
     mensagemLateral.innerHTML = '';
-    const textoDescriptografado = criarTextoarea();
+    const textoDescriptografado = criarParagrafo();
     textoDescriptografado.textContent = textoGlobal;
     mensagemLateral.appendChild(textoDescriptografado);
+    textoDescriptografado.addEventListener('input', () => {
+        if (textoDescriptografado.scrollHeight > textoDescriptografado.offsetHeight) {
+            textoDescriptografado.style.height = `${textoDescriptografado.scrollHeight}px`;
+        }
+    });
 
     copy()
 
     document.getElementById('text-area').focus();
 });
-window.addEventListener('resize', definirAltura);
